@@ -4,7 +4,7 @@ var path = require('path');
 
 
 module.exports = {
-    devtool: 'eval',
+    devtool: 'eval', // this makes a bunch of eval statements for purpose of debugging... obviously only for development
     entry: path.join(__dirname, 'app.js'),
     output: {
         path: '__build__',

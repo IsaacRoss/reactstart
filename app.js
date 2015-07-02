@@ -3,13 +3,16 @@
  */
 var React = require('react');
 
+// using webpack allows up to require other files the same
+// way we would do in node. You just have to export the module -> see card.js
+var Card = require('./card');
 
 var App = React.createClass({
     render(){
         return (
             <div className="container">
                 <div className="row">
-                    Hello
+                    <Card />
                 </div>
             </div>
         )
